@@ -1,0 +1,51 @@
+{
+  "name": "hello-kugou",
+  "version": "0.0.30",
+  "description": "kugou-miniapp generator for vue",
+  "author": "",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@kugou-miniapp/cli-service": "^0.0.30",
+    "@kugou-miniapp/cli-shared-utils": "^0.0.30",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.4.5",
+    "layui-src": "^2.5.5",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-router": "~4.4.0",
+    "@vue/cli-plugin-vuex": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "node-sass": "^4.9.2",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-cli-plugin-element": "~1.0.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "bugs": {
+    "url": "https://github.com/kugou-miniapp/kugou-cli/issues"
+  },
+  "gitHead": "7932697a466ee0df6c372dbf269a2fa807184abb",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kugou-miniapp/kugou-cli.git"
+  },
+  "vuePlugins": {
+    "service": [
+      "config/serve.js"
+    ]
+  }
+}
