@@ -1,5 +1,8 @@
 # hello-kugou
-
+# 添加到暂存区 git add .
+# 提交到本地分支  git commit -m "@JNR 第一次提交项目"
+# 第一次提交项目 ：git remote add origin https://github.com/KaiHavertz/yuhoou.git
+# 第一次拉取项目 ：git clone  https://github.com/KaiHavertz/yuhoou.git
 ## 重要文件
 - public/app.json：小程序配置文件，开发环境下修改后可以实时更新到手机小程序中(小程序会从访问路径的根目录找app.json)
 
@@ -17,6 +20,7 @@ yarn serve
 ```
 yarn build
 ```
+
 
 ### 开发者工具
 
