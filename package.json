@@ -4,7 +4,7 @@
   "description": "kugou-miniapp generator for vue",
   "author": "",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
