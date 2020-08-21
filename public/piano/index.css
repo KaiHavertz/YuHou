@@ -1,0 +1,61 @@
+html {
+  background: url(./bg.jpg);
+}
+body {
+  margin: 0;
+}
+
+.container {
+  height: 150px;
+  width: 100%;
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  /* css3属性：box-shadow */
+  box-shadow: 0px 0px 10px #00000044;
+}
+
+.item {
+  position: absolute;
+  box-sizing: border-box;
+  border-radius: 5px;
+  top: 0;
+  font-size: 12px;
+}
+
+.white {
+  background: #fff;
+  height: 100%;
+  border: 1px solid #00000044;
+  z-index: 1;
+  /* 以下属性需要js控制 */
+  width: 24px;
+  left: 100px;
+}
+.black {
+  background: #444;
+  border: 1px solid #00000088;
+  height: 96px;
+  color: #fff;
+  z-index: 2;
+  /* 以下属性需要js控制 */
+  width: 20px;
+  left: 50px;
+}
+
+.item span{
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  word-break: break-all;
+  padding: 0 2px;
+  box-sizing: border-box;
+}
+
+.item.active{
+  background: #bd87b0;
+}

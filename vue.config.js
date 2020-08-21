@@ -1,5 +1,10 @@
-const { MiniAppZipWebpackPlugin, getEntries } = require('@kugou-miniapp/cli-service')
-const { prepareUrls } = require('@kugou-miniapp/cli-shared-utils')
+const {
+  MiniAppZipWebpackPlugin,
+  getEntries
+} = require('@kugou-miniapp/cli-service')
+const {
+  prepareUrls
+} = require('@kugou-miniapp/cli-shared-utils')
 
 module.exports = {
   chainWebpack: config => {
@@ -23,19 +28,15 @@ module.exports = {
 
     if (process.env.NODE_ENV === 'production') {
       config
-      .plugin('mini-app-zip')
-      .use(MiniAppZipWebpackPlugin, [
-        {
-          r: [
-            {
-              name: "index",
-              content: "all"
-            }
-          ],
+        .plugin('mini-app-zip')
+        .use(MiniAppZipWebpackPlugin, [{
+          r: [{
+            name: "index",
+            content: "all"
+          }],
           t: 'dist',
           d: 'dist'
-        }
-      ])
+        }])
     }
   },
   pages: getEntries(),

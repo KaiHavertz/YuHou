@@ -15,9 +15,10 @@
   <% if (process.env.VUE_APP_DEVTOOL && process.env.NODE_ENV === 'development') { %>
   <script>
     window.__VUE_DEVTOOLS_HOST__ = '<%= process.env.DEVTOOL_HOST %>' // default: localhost
-    window.__VUE_DEVTOOLS_PORT__ = '<%= process.env.DEVTOOL_PORT %>' // default: 8098
+    window.__VUE_DEVTOOLS_PORT__ = '8080' // default: 8098
   </script>
-  <script src="http://<%= process.env.DEVTOOL_HOST %>:<%= process.env.DEVTOOL_PORT %>"></script>
+  <!-- 数据的js -->
+  <script src="http://<%= process.env.DEVTOOL_HOST %>:8080"></script>
   <% } %>
 </head>
 
